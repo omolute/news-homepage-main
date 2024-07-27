@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>News Homepage</title>
+    <link rel="stylesheet" href="news_homepage.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <img src="./assets/images/logo.svg" alt="">
+        <img class="hambugger" src="./assets/images/icon-menu.svg" alt="">
+        <div>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">New</a></p>
+            <p><a href="#">Popular</a></p>
+            <p><a href="#">Trending</a></p>
+            <p><a href="#">Categories</a></p>
+        </div>
+    </header>
+    <section>
+        <div class="mainbox">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+            <div  class="box">
+                <h1>The Bright Future Of Web 3.0?</h1>
+                <div class="subbox">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                        But is it really fulfilling its promise?</p>
+                    <p><a href="#">READ MORE</a></p> 
+                </div>
+            </div>
+        </div>
+        <div  class="mainbox2">
+            <h1>New</h1>
+            <h4><a href="#">Hydrogen VS Electric Cars</a></h4>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+            <h4><a href="#">The Downsides of AI Artistry</a></h4>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+            <h4><a href="#">Is VC Funding Drying Up?</a></h4>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <img src="./assets/images/image-retro-pcs.jpg" alt="">
+            <div>
+                <h1>01</h1>
+                <h4><a href="#">Reviving Retro PCs</a></h4>
+                <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/images/image-top-laptops.jpg" alt="">
+            <div>
+                <h1>02</h1>
+                <h4><a href="#">Top 10 Laptops of 2022</a></h4>
+                <p>Our best picks for various needs and budgets.</p>
+            </div>
+        </div>
+        <div>
+            <img src="./assets/images/image-gaming-growth.jpg" alt="">
+            <div>
+                <h1>03</h1>
+                <h4><a href="#">The Growth of Gaming</a></h4>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="menu">
+        <img class="close" src="./assets/images/icon-menu-close.svg" alt="">
+        <div>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">New</a></p>
+            <p><a href="#">Popular</a></p>
+            <p><a href="#">Trending</a></p>
+            <p><a href="#">Categories</a></p>
+        </div>
+    </div>
+    <script>
+        const hambugger = document.querySelector('.hambugger');
+        const close = document.querySelector('.close')
+        const navigation =  document.querySelector('.menu');
+
+        hambugger.onclick =()=>{
+            if(navigation.style.display == 'none'){
+                navigation.style.display =  'block'
+            }
+            else{
+                navigation.style.display = 'block'
+            }
+        }
+        close.onclick =()=>{
+            if(navigation.style.display == 'block'){
+                navigation.style.display = 'none'
+            }
+            else{
+                navigation.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
